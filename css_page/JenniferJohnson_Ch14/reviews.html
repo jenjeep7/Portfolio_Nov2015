@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles7.css">
+        <style>
+           .reviews {
+	    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	    width: 100%;
+	    margin-top: 25px;
+	    border-collapse: collapse;
+	   }
+	   .reviews caption {
+	    text-align: center;
+	    font-size: 1.5em;
+	    margin-bottom: 10px;
+	    color: rgb(32, 47, 85);
+	    font-weight: bold;
+	   }
+	   .reviews td, .reviews th {
+	    font-size: 1.1em;
+	    border: 1px solid #02640A;
+	    padding: 3px 7px 2px 7px;
+	   }
+	   .reviews th {
+	    text-transform: uppercase;
+	    text-align: left;
+	    padding-top: 5px;
+	    padding-bottom: 4px;
+	    background: rgba(58, 72, 90,.75);
+	    background: -moz-linear-gradient(rgb(58, 72, 90), rgb(97, 121, 152));
+	    background: -webkit-linear-gradient(rgb(58, 72, 90), rgb(97, 121, 152));
+	    background: -o-linear-gradient(rgb(58, 72, 90), rgb(97, 121, 152));
+	    background: linear-gradient(rgb(58, 72, 90), rgb(97, 121, 152));
+	    color: white;
+	   }
+	   .reviews tr:nth-of-type(even){
+	    background-color: rgba(58, 72, 90,.5)
+	   }
+	   .reviews tr:nth-of-type(odd){
+	    background-color: rgba(58, 72, 90,.1);
+	   }
+	   #rating, #customer {
+	    width: 130px;
+	   }
+	   #project {
+	    width: 200px;
+	   }
+        </style>
+    <title>G Johnson Builders, LLC</title>
+</head>
+<!--
+Author:  Jennifer Johnson
+Date:  March 28, 2015
+Subject:  CSS Chapter 13-14  Homework Site
+
+-->
+<body>
+<div>
+    <div class="banner"><img src="banner2.jpg" class="house"  width="900" height="330" alt="house">
+  </div>
+<h1><strong>G.</strong> Johnson Builders, LLC</h1>
+<nav>
+   <ul class="nav"> <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="ideas.html">Ideas</a></li>
+                    <li><a href="#">Page 5</a></li>
+   </ul>
+</nav>
+<table class="reviews" width="100%">
+    <caption>Here is what our latest customers have to say about our services!</caption>
+    <colgroup>
+	<col id="customer">
+	<col id="rating">
+	<col id="project">
+	<col id="comments">
+    </colgroup>
+    <tr>
+	<th scope="customer">Customer Name</th>
+	<th scope="rating">Rating</th>
+	<th scope="project">Project</th>
+	<th scope="comments">Comments</th>
+    </tr>
+    <tr>
+	<td>Leroy</td>
+	<td><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"></td>
+	<td>Basement Remodel</td>
+	<td>Gary was great to work with!  We love our new basement!  They were affordable and were always on time!</td>
+    </tr>
+    <tr>
+	<td>Joe Anderson</td>
+	<td><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"></td>
+	<td>Deck</td>
+	<td>G. Johnson Builders installed new maintenance free decking on our porch.  We love the finished result!  No more painting and staining for us!</td>
+    </tr>
+    <tr>
+	<td>Tom Jones</td>
+	<td><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"><img src="images/star.gif" width="16" height="16"></td>
+	<td>New Home</td>
+	<td>We hired G. Johnson Builders to frame our new home.  When other framers said it couldn't be done, Gary helped us make our home exactly how we wanted it.  We love the
+	beautiful curved arches in our entryway.  They are beautiful!</td>
+    </tr>
+</table>
+
+    <footer>
+        Jennifer Johnson <a href="mailto:jennifer_johnson5@my.minnesota.edu">jennifer_johnson5@my.minnesota.edu</a>
+    </footer>
+    
+</div>
+</body>
+</html>

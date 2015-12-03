@@ -1,0 +1,58 @@
+
+/* Gallery Page styles */
+
+.galleryTitle {
+      background: none;
+      color: black;
+      text-align: center;
+      padding: 10px;
+}
+
+.gallery figure {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      margin: 15px;
+      position: relative;
+      
+}
+
+.gallery figcaption {
+      position: absolute;
+      top: 15%;
+      bottom: 15%;
+      left: 0;
+      right: 0;
+      background-color: rgb(153,153,153,);
+      background-color: rgba(153,153,153, .75);
+      padding: 30px;
+      font-family: Titillium, Arial, sans-serif;
+      font-weight: 400;
+      font-size: .9em;
+      color: white;
+      opacity: 0;
+      -webkit-transition: opacity .75s ease-out;
+      -moz-transition: opacity .75s ease-out;
+      -o-transition: opacity .75s ease-out;
+      transition: opacity .75s ease-out;
+     
+    }
+    figure:hover figcaption {
+      opacity: 1;
+    }
+      .gallery figure img {
+      
+      border: 1px solid #666;
+      background-color: #fff;
+      padding: 4px;
+      box-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    }
+    
+    .gallery figure {
+      display: inline-block;
+      vertical-align: top;
+      width: 210px;
+      margin: 0 40px 10px 40px;
+      position: relative;
+      
+    }

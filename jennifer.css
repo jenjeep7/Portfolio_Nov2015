@@ -1,0 +1,381 @@
+/*Stylesheet for Jennifer Johnson Portfolio website
+ *http://www.mstatewebdev.com/jjohnson6/Portfolio/index.html
+ *
+ *Date: November 16 2015
+
+ This is a refresh of the site using Bootstrap */
+@import url(reset.css);
+
+
+/* Resetting to border-box to so that everything fits on page correctly */
+* {
+      box-sizing: border-box;
+      -mox-box-sizing: border-box;
+    }
+  .wrapper {
+    background-color: black;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+body {
+  background-color: #262D3B;
+}
+
+
+header {
+    background-color: #000000;
+    background-image: url(images/bannerForest.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    font-size: 1.6em;
+    height: 300px;
+    width: auto;
+}
+
+.name {
+    color: #000000;
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: 210%;
+    padding-top: 40px;
+    text-shadow: 1px 1px 0 #6699ff;
+}
+.slogan {
+    font-size: 1.10em;
+    color: #cccccc;
+    font-family: Tahoma, sans-serif;
+    text-shadow: 1px 1px 0 #6699ff;
+    margin-top: 0;
+   
+    clear: left;
+}
+.navbar {
+  border: 1px solid black;
+}
+.nav li {
+  padding-right: 35px;
+}
+
+/* index.html css styling */
+
+.webdev {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, rgba(43, 43, 43, 1) 0%, rgba(94, 94, 94, 1) 50%, rgba(40, 40, 40, 1) 100%) repeat scroll 0 0;
+    color: white;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    border: 1px solid black;
+    border-top: none;
+}
+.webdev img {
+  border: 5px solid #000000;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+.program {
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+.program p {
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: center;
+}
+.program h3 {
+  border-top: 1px solid white;
+    font-size: 1.1em;
+    margin: 15px;
+    padding-top: 25px;
+    text-align: center;
+}
+.index {
+  background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #2b2b2b 1%, #282828 17%, #22335b 47%, #282828 85%, #282828 100%) repeat scroll 0 0;
+  margin-top:-20px;
+  border: 1px solid black;
+  
+} 
+.index h2 {
+  text-align: center;
+}
+/* Contact Page Styling */
+
+.contact {
+    
+    background-color: #cccccc;
+    background-image: url(grey_wash_wall_@2X.png);
+    margin-top:-20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.contact h2 {
+  text-align: center;
+  border-bottom: 2px solid black;
+  font-size: 1.5em;
+}
+.contact ul {
+    list-style-type: none;
+    font-size: 1.25em;
+    line-height: 200%;
+}
+.contact li a{
+    text-decoration: none;
+}
+.contact a:link {
+    color: #eaeaea;
+}
+.contact a:hover {
+    color: #0099cc;
+}
+.contact a:visited {
+    color: #999999;
+}
+.contact input[type="radio"] {
+  margin-bottom: 8px;
+  vertical-align: middle;
+  height: 100%;
+}
+.received {
+  color: white;
+  padding: 40px 20px;
+}
+.mapTitle {
+  color: white;
+  padding: 40px 40px;
+  text-align: center;
+}
+
+/* CSS Page Styling */
+.css-row {
+  margin-left: auto;
+  margin-right: auto;
+}
+.col-md-4{
+               
+              
+               position: relative;
+               overflow: hidden;
+               color: white;
+               background: #5e6068; /* Old browsers */
+               background: -moz-linear-gradient(top,  #5e6068 0%, #000000 17%, #000000 70%, #5b5e66 100%); /* FF3.6+ */
+               background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5e6068), color-stop(17%,#000000), color-stop(70%,#000000), color-stop(100%,#5b5e66)); /* Chrome,Safari4+ */
+               background: -webkit-linear-gradient(top,  #5e6068 0%,#000000 17%,#000000 70%,#5b5e66 100%); /* Chrome10+,Safari5.1+ */
+               background: -o-linear-gradient(top,  #5e6068 0%,#000000 17%,#000000 70%,#5b5e66 100%); /* Opera 11.10+ */
+               background: -ms-linear-gradient(top,  #5e6068 0%,#000000 17%,#000000 70%,#5b5e66 100%); /* IE10+ */
+               background: linear-gradient(to bottom,  #5e6068 0%,#000000 17%,#000000 70%,#5b5e66 100%); /* W3C */
+               filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e6068', endColorstr='#5b5e66',GradientType=0 ); /* IE6-9 */
+
+               display: inline-block;
+               margin: 10px 2px 10px 2px;
+               border: 4px solid black;
+               border-radius: 10px 10px 0 0;
+               box-shadow: 2px 2px 2px rgb(153,153,153);
+               
+          }
+          .col-md-4 a {
+               padding: 20px;
+               font-size: 1.4em;
+               text-decoration: none;
+               color: white;
+          }
+          .col-md-4 a:hover {
+               color: rgb(153,153,153);
+              
+          }
+          .col-md-4 img {
+               width: 95%;
+               padding: 10px;  
+          }
+          .col-md-4 .assignmentInfo {
+               /*makes comments invisible until hovered on */
+               opacity: 0;
+               z-index: 1;
+               width: auto;
+               position: absolute;
+               bottom: 0;
+               background-color: rgb(7, 48, 95);
+               background-color: rgba(7, 48, 95, .9);
+               color: white;
+               padding: 10px;
+               
+               
+          }
+          /*Makes content visible over photos when user hovers over them */
+          .col-md-4:hover .assignmentInfo {
+               opacity: 1;
+               -webkit-transition: opacity .75s ease-out;
+               -moz-transition: opacity .75s ease-out;
+               -o-transition: opacity .75s ease-out;
+               transition: opacity .75s ease-out;
+          }
+
+  /* Styling for Journal Page */
+          .journal {
+    padding-top: 30px;
+    text-align: center;
+    background-color: #cccccc;
+    background-image: url(grey_wash_wall_@2X.png);
+}
+.journal img {
+          padding-top: 40px;
+          padding-bottom: 40px;
+          margin-right: auto;
+          margin-left: auto;
+     }
+     .journal p {
+          font-size: 1.25em;
+          padding: 25px;
+     }
+     .journal h4 {
+          font-size: 1.3em;
+          margin-top: 10px;
+     }
+.journal a {
+    font-size: 2em;
+    text-decoration: none;
+    
+}
+.journal a:link {
+    color: #eaeaea;
+}
+
+.journal a:visited {
+    color: #eaeaea;
+}
+.journal a:hover {
+    color: #99ffff;
+}
+/*about me page styling */
+.about {
+    background-color: #cccccc;
+    background-image: url(grey_wash_wall_@2X.png);
+    padding-bottom: 40px;
+}
+.about h1 {
+    color: black;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+
+/* Css Page Styling */
+.content {
+               background: #2b2b2b; /* Old browsers */
+               background: -moz-linear-gradient(top,  #2b2b2b 1%, #282828 17%, #22335b 47%, #282828 85%, #282828 100%); /* FF3.6+ */
+               background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#2b2b2b), color-stop(17%,#282828), color-stop(47%,#22335b), color-stop(85%,#282828), color-stop(100%,#282828)); /* Chrome,Safari4+ */
+               background: -webkit-linear-gradient(top,  #2b2b2b 1%,#282828 17%,#22335b 47%,#282828 85%,#282828 100%); /* Chrome10+,Safari5.1+ */
+               background: -o-linear-gradient(top,  #2b2b2b 1%,#282828 17%,#22335b 47%,#282828 85%,#282828 100%); /* Opera 11.10+ */
+               background: -ms-linear-gradient(top,  #2b2b2b 1%,#282828 17%,#22335b 47%,#282828 85%,#282828 100%); /* IE10+ */
+               background: linear-gradient(to bottom,  #2b2b2b 1%,#282828 17%,#22335b 47%,#282828 85%,#282828 100%); /* W3C */
+               filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#282828',GradientType=0 ); /* IE6-9 */
+               border: 4px solid black;
+
+          }
+          .cssInfo  {
+               text-align: center;
+               color: white;
+               padding: 40px;
+               background-color: #434446;
+               background: rgb(43,43,43); /* Old browsers */
+               background: -moz-linear-gradient(top,  rgba(43,43,43,1) 0%, rgba(94,94,94,1) 50%, rgba(40,40,40,1) 100%); /* FF3.6+ */
+               background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,43,43,1)), color-stop(50%,rgba(94,94,94,1)), color-stop(100%,rgba(40,40,40,1))); /* Chrome,Safari4+ */
+               background: -webkit-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(94,94,94,1) 50%,rgba(40,40,40,1) 100%); /* Chrome10+,Safari5.1+ */
+               background: -o-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(94,94,94,1) 50%,rgba(40,40,40,1) 100%); /* Opera 11.10+ */
+               background: -ms-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(94,94,94,1) 50%,rgba(40,40,40,1) 100%); /* IE10+ */
+               background: linear-gradient(to bottom,  rgba(43,43,43,1) 0%,rgba(94,94,94,1) 50%,rgba(40,40,40,1) 100%); /* W3C */
+               filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#282828',GradientType=0 ); /* IE6-9 */
+          }
+          
+          .cssInfo h1 {
+               font-size: 3em;
+               margin-bottom: 20px;
+               border-bottom: 2px dashed black;
+               color: #c9c9c9;
+               text-shadow: 3px 3px 0 black;
+          }
+          .cssInfo ul{
+               color: #c9c9c9;
+               text-shadow: 2px 2px 0 black;
+               text-align: center;
+               text-decoration: underline;
+               padding-top: 20px;
+               padding-bottom: 10px;
+               font-size: 1.5em;
+               
+          }
+          .cssInfo li {
+               list-style-type: circle;
+               text-align: left;
+               margin-left: 35%;
+          }
+footer {
+    text-align: center;
+    font-style: italic;
+    font-size: 1em;
+    height: 50px;
+    margin-bottom: 0;
+    margin-left: 0;
+    background-color: #cccccc;
+    background: rgb(43,43,43); /* Old browsers */
+    background: -moz-linear-gradient(top,  rgba(43,43,43,1) 0%, rgba(94,94,94,1) 50%, rgba(40,40,40,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(43,43,43,1)), color-stop(50%,rgba(94,94,94,1)), color-stop(100%,rgba(40,40,40,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(94,94,94,1) 50%,rgba(40,40,40,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(94,94,94,1) 50%,rgba(40,40,40,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(43,43,43,1) 0%,rgba(94,94,94,1) 50%,rgba(40,40,40,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(43,43,43,1) 0%,rgba(94,94,94,1) 50%,rgba(40,40,40,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#282828',GradientType=0 ); /* IE6-9 */
+    clear: both;
+   
+   }
+footer a {
+    display: block;
+    padding: 10px;
+}
+footer a:link {
+    color: #000000;
+
+}
+footer a:hover {
+    color: white;
+}
+footer a:visited {
+    color: #6699ff; 
+}
+.glyphicon {
+  margin-right: 6px;
+}
+
+@media (max-width: 767px) {
+  footer {
+    font-size: .75em;
+  }
+  #map_canvas {
+    height: 200px;
+    width: 200px;
+    margin: auto;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .cssInfo {
+    padding: 10px;
+
+  }
+  .cssInfo li {
+    margin-left: 10px;
+  }
+  header {
+    background-size: auto;
+  }
+
+
+}

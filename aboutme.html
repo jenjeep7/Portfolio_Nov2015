@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Jennifer Johnson's Portfolio Home Page
+        November 2014-->
+<title>JenniferJohnson</title>
+<meta charset="utf-8">
+<!--
+
+<link href="print.css" rel="stylesheet" media="print">  -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="jennifer.css">
+
+     <style>
+     .about {
+     	margin-top:-20px;
+     }
+     
+     .cycle-slideshow { 
+          width: 50%;
+          margin-left: auto;
+          margin-right: auto; 
+     }
+
+     .cycle-slideshow img { 
+     width: 100%; 
+     height: auto 
+     }
+     /* pager */
+     .cycle-pager { 
+          text-align: center;
+          width: 100%;
+          z-index: 500; 
+          position: absolute;
+          top: 10px; 
+          overflow: hidden;
+     }
+     .cycle-pager span { 
+     font-family: arial; 
+     font-size: 50px;
+     width: 16px; 
+     height: 16px; 
+     display: inline-block;
+     color: #ddd; 
+     cursor: pointer; 
+     }
+     .cycle-pager span.cycle-pager-active { color: #D69746;}
+     .cycle-pager > * { cursor: pointer;}
+     
+     /* caption */
+     .cycle-caption { 
+     position: absolute;
+     color: white; 
+     bottom: 15px;
+     right: 15px; 
+     z-index: 700;
+     }
+
+
+/* overlay */
+.cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute; 
+    bottom: 0; 
+    width: 100%;
+     z-index: 600;
+    background: black;
+     color: white;
+     padding: 15px;
+      opacity: .75;
+      text-align: center;
+     }
+     @media (max-width: 767px) {
+          .cycle-slideshow {
+               width: 90%;
+               margin-left: auto;
+               margin-right: auto;
+          }
+     }
+     </style>
+     
+     <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+</head>
+<body>
+     <div class="wrapper">
+<header>
+     <h1 class="name">Jennifer Johnson</h1>
+     
+     <p class="slogan">Student of Technology and Creativity</p>
+</header>
+<nav  role="navigation" class="navbar navbar-inverse">
+<div class="container-fluid">
+     <div>
+          <ul class="nav navbar-nav">
+                <li role="presentation"><a href="index.html">Home</a></li>
+               <li role="presentation"><a href="contact.html">Contact</a></li>
+               <li role="presentation"><a href="journal.html">Journal</a></li>
+               <li role="presentation" class="active"><a href="aboutme.html">About Me</a></li>
+               <li role="presentation"><a href="css.html">CSS</a></li>
+          </ul>
+     </div>
+</div>
+</nav>
+
+<div class="containter about">
+
+     <h1>About Me</h1>
+     <!-- slide show creted with jQuery Cycle 2 Plug-in -->
+<div class="cycle-slideshow">
+<!-- this is the div for the pager at the top of the slideshow-->
+<div class="cycle-pager"></div>
+
+<!--This div contains the overlay.  The overlay contains text to create a title and caption for each photo-->
+<div class="cycle-overlay"></div>
+
+<img src="images/aboutMe/family.jpg" data-cycle-title="My Family" data-cycle-desc="I love to travel with my husband and children as much as possible.">
+
+<img src="images/aboutMe/mexico.jpg" data-cycle-title="Warmer Weather" data-cycle-desc="I love being able to escape to a warmer climate during the harsh winter months here in Minnesota.">
+
+<img src="images/aboutMe/hockey.jpg" data-cycle-title="Hockey Mom" data-cycle-desc="When I am not coding great websites, I can be found cheering on my two boys at the hockey rink.">
+
+<img src="images/aboutMe/puppy.png" data-cycle-title="Dog Lover" data-cycle-desc="I have 2 chocolate labradors.">
+
+<img src="images/aboutMe/sunset.jpg" data-cycle-title="Lake Winnibigoshish" data-cycle-desc="Summer in Minnesota often means wonderful weekends spent at the lake">
+</div>
+
+</div>
+<footer class="footer">
+<div class="container text-center">
+     <a href="mailto:jennifer_Johnson5@my.minnesota.edu"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>jennifer_johnson5@my.minnesota.edu</a>
+     </div>
+</footer>
+
+     
+ </div>  
+
+    <!--hosted jquery library -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<!-- link to the cycle2 plugin-->
+<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>

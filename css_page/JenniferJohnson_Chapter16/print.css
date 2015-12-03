@@ -1,0 +1,66 @@
+/*Print CSS Styles*/
+/* Change all font to black */
+* {
+    color: #000000 !important;
+}
+/*Change to printer friendly sizes for headline */
+h1 {
+    font-size: 30pt !important;
+}
+h2 {
+    font-size: 16pt !important;
+}
+h3 {
+    font-size: 11pt !important;
+}
+/* Don't show these when printing */
+.title .nav, .banner {
+    display: none;
+}
+.title .logo {
+    position: relative;
+    
+}
+.title h1, .titleLogo {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.title h1 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.homePage, .ideasPage, .galleryPage, .contactPage, .reviewsPage {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+body {
+    border: none;
+}
+
+h2, .white, .sidebar1, .ideasMain {
+    overflow: visible;
+}
+/*These images are not necessary when printing */
+.ideasMain img, .homePage figure, .sidebar img, .sidebar1 img {
+    display: none;
+}
+footer, h1, .titleLogo, .reviews th, .reviews tr, .sidebar, .contact input, .contact h1, {
+    background: #fff;
+}
+.sidebar1, .ideasMain, .sidebar2, .nav li, .sidebar{
+    float: none;
+    width: auto;
+    clear: both;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+h2, h3 {
+    border: none;
+}
+/* add the URL after Links so user has address since they can't click on them */
+a:after {
+    content: " (" attr(href) ") ";
+}
